@@ -219,10 +219,10 @@ def main():
         try:
             first = input('First to start?[y/n]: ').upper()
         except (EOFError, KeyboardInterrupt):
-            print('Bye')
+            print('See you soon')
             exit()
         except (KeyError, ValueError):
-            print('Bad choice')
+            print('Open your eyes!!')
 
     # Main loop of this game
     while len(empty_cells(board)) > 0 and not game_over(board):
@@ -238,7 +238,7 @@ def main():
         clean()
         print(f'Human turn [{h_choice}]')
         render(board, c_choice, h_choice)
-        print('YOU WIN!')
+        print('YOU WIN! Congrats!!!')
     elif wins(board, COMP):
         clean()
         print(f'Computer turn [{c_choice}]')
@@ -247,7 +247,7 @@ def main():
     else:
         clean()
         render(board, c_choice, h_choice)
-        print('DRAW!')
+        print('DRAW!!!')
 
     exit()
 
