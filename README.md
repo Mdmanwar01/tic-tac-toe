@@ -224,7 +224,7 @@ def main():
         except (KeyError, ValueError):
             print('Open your eyes!!')
 
-    # Main loop of this game
+    # Main loop of That game
     while len(empty_cells(board)) > 0 and not game_over(board):
         if first == 'N':
             ai_turn(c_choice, h_choice)
