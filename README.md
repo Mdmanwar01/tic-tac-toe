@@ -243,11 +243,11 @@ def main():
         clean()
         print(f'Computer turn [{c_choice}]')
         render(board, c_choice, h_choice)
-        print('YOU LOSE!')
+        print('YOU LOST THE GAME !!')
     else:
         clean()
         render(board, c_choice, h_choice)
-        print('DRAW!!!')
+        print('YOU HAVE DRAWN !!')
 
     exit()
 
