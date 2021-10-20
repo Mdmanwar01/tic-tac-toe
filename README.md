@@ -1,10 +1,9 @@
 
 from math import inf as infinity
-import re
 from random import choice
 import platform
 import time
-from os import system
+from os import syatem hello
 
 HUMAN = -1
 COMP = +1
